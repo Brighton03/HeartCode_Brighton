@@ -18,9 +18,9 @@ body {margin:0;}
     font-size: 17px;
 }
 
-/* .navbar-nav {
-    padding-left :100px;
-} */
+.navbar-nav {
+    padding-left :50%;
+}
 
 .nav li {
     border-left:white solid 1px 
@@ -33,8 +33,6 @@ body {margin:0;}
 }
 
 .header {	
-	
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -45,7 +43,23 @@ body {margin:0;}
 }
 
 .content-header{
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.content-header h2{
     display: inline-block;
+}
+
+.content-header img{
+    margin-bottom: 10px;
+}
+
+section{
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .section-header{
@@ -69,11 +83,23 @@ body {margin:0;}
 
 .confusedDogPic{
     margin-bottom:30px;
+    margin: auto;
+}
+
+
+.image-block{
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .widget{
     padding: 0px !important;
 }
+
+/* .widget:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 1s;
+} */
 
 .overlay{
     background-color: white;
@@ -82,36 +108,107 @@ body {margin:0;}
     margin-top: 60px;
 }
 
-.overlay h2{
+#top h2{
     text-align: center;
 }
 
 .img-caption{
     position: absolute;
-    top: 70%;
-    z-index: 1;
+    z-index: 100;
     padding-left: 5%;
     width: 100%;
-    height: 30%;
     background-color: white;
     opacity: 0.7;
-    border: 1px black solid;
+    border: 10px black solid; border-left: 0px; border-right: 0px; border-bottom:0px;  border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;
 }
 
-.widget a{
+.carousel-caption{
+    top: 70%;
+    bottom:0%;
+    width:100%;
+   left:0%;
+   right:0%;
+   color: black;
+    background-color: white;
+    opacity: 0.7;
+    border: 10px black solid; border-left: 0px; border-right: 0px; border-bottom:0px;  border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;
+}
+
+
+.item a{
     color: black !important;
     text-decoration: none !important;
 }
 
-.widget a h3{
+.item h3{
     font-weight: bold;
 }
 
-.widget a h4{
+.item h4{
     font-weight: bold;
 }
 
-.widget img {
-    border:1px black solid;
+.item img {
+    border-radius: 10px;
      z-index: 2 ;
+}
+
+.carousel {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-inner{
+    height:570px;
+}
+
+.coexist {
+    margin: auto;
+    text-align: center;
+}
+
+p{
+    font-weight:bold;
+}
+
+.thumbnail img {
+    height:168px;
+}
+
+.thumbnail .caption{
+    height: 288px;
+}
+
+.icons {
+    text-align: center;
+}
+
+.impact {
+    text-align: center;
+}
+
+#what {
+    background-color: #d3d3d3;
+}
+
+#Why {
+    background-color: #d3d3d3;
+}
+
+#how {
+    background-color: #d3d3d3;
+}
+
+#up{
+    position: fixed;
+    bottom:10px;
+    right:10px;
+    border: 5px solid black;
+    padding:3px;
+    border-radius: 50%;
+}
+
+#top{
+    text-decoration: none !important;
+    color: black !important;
 }
